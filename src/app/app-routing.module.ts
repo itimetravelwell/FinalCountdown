@@ -8,15 +8,18 @@ import {HowComponent} from './how/how.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { animation: 'Home' }
   },
   {
     path: 'about/:id',
-    component: AboutComponent
+    component: AboutComponent,
+    data: { animation: 'About' }
   },
   {
     path: 'how/:test',
-    component: HowComponent
+    component: HowComponent,
+    data: { animation: 'How' }
   }
 
 ];

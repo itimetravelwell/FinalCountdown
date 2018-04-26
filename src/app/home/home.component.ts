@@ -30,8 +30,8 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   itemCount =  4; /* Removed String as would give error in tslint watch if errors occur later define as string*/
-  btnText = 'Add an item';
-  goalText = 'My First Life Goal';
+  btnText = 'Add to REMember List';
+  goalText = 'Example: I want to Dream about Superpowers!';
   goals = [];
 
   constructor(private _data: DataService) { }

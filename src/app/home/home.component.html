@@ -1,16 +1,16 @@
 <div class="container color-dark">
   <div class="col">
-    <p>Add a Bucket List item</p>
+    <p><i class="material-icons md-24">playlist_add</i> Add to your REM List:</p>
   </div>
   <div class="col">
-    <p>Your Bucket List item {{ itemCount }}</p>
+    <p><i class="material-icons md-24">list</i> Your have {{ itemCount }} things to REMember.</p>
   </div>
 </div>
 <div class="container color-light" [@goals]="goals.length">
   <div class="col">
-    <p class="sm">Use the Form Below</p>
+    <p class="sm"><i class="material-icons md-18">border_color</i> Type your Dream Goal or Dream Check.</p>
     <form>
-      <input type="text" class="txt" name="item" placeholder="Life Goal..."  [(ngModel)]="goalText">
+      <input type="text" class="txt" name="item" placeholder="I Want to Dream about..."  [(ngModel)]="goalText">
       
       <input type="submit" class="btn" [value]= "btnText" (click)="addItem()">
     </form>
@@ -21,3 +21,5 @@
       {{ goal }}
   </div>
 </div>
+
+<fa name="cog" animation="spin"></fa>

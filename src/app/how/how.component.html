@@ -1,3 +1,25 @@
-<p>
-  how works!
-</p>
+<div class="container color-dark">
+    <div class="col">
+      <p><i class="material-icons md-18">playlist_add_check</i> Use the Box Below to Add Items you Want to <strong>"REMember"</strong> </p>
+    </div>
+    <div class="col">
+      <p><i class="material-icons md-18">list</i> You have {{ itemCount }} things to REMember, Click to REMove.</p>
+    </div>
+  </div>
+  <div class="container color-light" [@goals]="goals.length">
+    <div class="col">
+      <h4>Do you wish you could remember your Dreams? What about controlling them?</h4>
+      <p class="sm"><a href="https://en.wikibooks.org/wiki/Lucid_Dreaming" target="_blank">Lucid Dreaming</a>/<a href="https://en.wikibooks.org/wiki/Lucid_Dreaming/Dream_Recall" target="_blank">Dream Recall</a> works best when you practice Dream Checks while you are awake, Remembering those Dream Checks when you go to sleep, And Remembering to check if they worked when you wake up.</p><br>
+      <form>
+        <input type="text" class="txt" name="item" placeholder="Life Goal..."  [(ngModel)]="goalText">
+        
+        <input type="submit" class="btn" [value]= "btnText" (click)="addItem()">
+      </form>
+  
+    </div>
+    <div class="col">
+      <p class="tooltip"><i class="material-icons md-18">face</i> TIP: Humans generally have an issue remembering more than 5-7 items. A simple place to start would be with 3, and in order of importance.</p>
+      <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
+                {{ goal }}
+    </div>
+  </div>

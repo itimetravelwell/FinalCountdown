@@ -1,10 +1,11 @@
 <!--Main App 'header'.-->
-
+<div [@routerAnimation]="getRouteAnimation(route)">
 <ul>
-  <li><a routerLink="">Home</a></li>
-  <li><a routerLink="how/test">How to Use</a></li>
-  <li><a routerLink="about/343">Contact</a></li>
+  <li><a routerLink="" routerLinkActive="active"><i class="material-icons md-48">face</i>DR3AMBOY</a></li>
+  <li><a routerLink="how/test" routerLinkActive="active"><i class="material-icons">help_outline</i>Usage</a></li>
+  <li><a routerLink="about/343" routerLinkActive="active"><i class="material-icons">info_outline</i>Contact</a></li>
 </ul>
 
-
-<router-outlet></router-outlet>
+<fa name="cog" animation="spin"></fa>
+<router-outlet #route="outlet"></router-outlet>
+</div>
