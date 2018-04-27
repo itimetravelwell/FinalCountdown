@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { HowComponent } from './how/how.component';
 import { AboutComponent } from './about/about.component';
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import {DataService} from './data.service';
 
@@ -26,8 +25,7 @@ import {DataService} from './data.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule,
-    AngularFontAwesomeModule
+    BrowserAnimationsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

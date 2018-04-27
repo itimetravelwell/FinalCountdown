@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 import {
   trigger,
   state,
