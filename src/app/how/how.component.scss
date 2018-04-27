@@ -7,13 +7,7 @@
     padding: .4em 1.3em;
 }
 
-.color-dark {
-    background: #2885c4;
-}
 
-.color-light {
-    background: #57b3f1;
-}
 
 input.txt {
     border: 0;
@@ -23,22 +17,8 @@ input.txt {
     font-family: 'space mono'
 }
 
-input.btn {
-    border: 0;
-    display: block;
-    padding: 1em 3em;
-    background: #a5f883;
-    color: #003a61;
-    margin-bottom: 1em;
-    cursor: pointer;
-}
 
-.life-container {
-    background: #3FA0e1;
-    padding: .5em;
-    font-weight: bold;
-    cursor: pointer;
-}
+
 
 .tooltip {
     font-style: italic;
